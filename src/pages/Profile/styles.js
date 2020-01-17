@@ -23,4 +23,10 @@ export const Form = styled.View`
 
 export const FormInput = styled(Input)``;
 
-export const SubmitButton = styled(Button)``;
+export const SubmitButton = styled(Button)`
+  margin-bottom: 10px;
+`;
+
+export const LogoutButton = styled(Button)`
+  background: #f64c75;
+`;

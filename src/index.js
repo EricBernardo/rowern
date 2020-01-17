@@ -7,14 +7,14 @@ import './config/ReactotromConfig'
 
 import { store, persistor } from './store'
 
-import Routes from './routes'
+import App from './App'
 
-export default function App() {
+export default function Index() {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <StatusBar barStyle="#fff" backgroundColor="#2d3a4b" />
-        <Routes />
+        <App />
       </PersistGate>
     </Provider>
   );

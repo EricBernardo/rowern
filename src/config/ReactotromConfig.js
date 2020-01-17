@@ -14,5 +14,5 @@ if(__DEV__) {
 
   tron.clear()
 
-  console.ltron = tron
+  console.tron = tron
 } 

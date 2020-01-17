@@ -8,6 +8,7 @@ export const Container = styled.View`
 
   flex-direction: row;
   align-items: center;
+  margin-bottom: 10px;
 `;
 
 export const TInput = styled.TextInput.attrs({
@@ -16,6 +17,6 @@ export const TInput = styled.TextInput.attrs({
   flex: 1;
   font-size: 15px;
   margin-left: 10px;
-  color: #fff
+  color: #fff;
 `;
 

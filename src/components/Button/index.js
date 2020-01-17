@@ -22,7 +22,8 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-  loading: false
+  loading: false,
+  title: ''
 }
 
 export default Button

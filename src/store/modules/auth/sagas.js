@@ -28,7 +28,7 @@ export function* signIn({ payload }) {
 
     yield put(signInSuccess(access_token, profile.data.data))
 
-    Alert.alert(access_token)
+    // Alert.alert(access_token)
 
     // history.push('/category')
 
@@ -49,12 +49,7 @@ export function setToken({ payload }) {
   }
 }
 
-export function signOut() {
-  history.push('/')
-}
-
 export default all([
   takeLatest('persist/REHYDRATE', setToken),
-  takeLatest('@auth/SIGN_IN_REQUEST', signIn),
-  takeLatest('@auth/SIGN_OUT', signOut)
+  takeLatest('@auth/SIGN_IN_REQUEST', signIn)
 ])
